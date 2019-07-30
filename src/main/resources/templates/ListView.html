@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>ShoppingCart</title>
+</head>
+<body>
+
+<dl>
+
+  <th:block th:each="item: ${itemList}">
+    <dt>
+      <span th:text="${item.itemid}"></span>
+      <span th:text="${item.name}"></span>
+      <span th:text="${item.price}"></span>
+    </dt>
+  </th:block>
+</dl>
+
+</body>
+</html>
