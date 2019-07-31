@@ -6,16 +6,25 @@
 </head>
 <body>
 
-<dl>
 
   <th:block th:each="item: ${itemList}">
-    <dt>
+    <form th:action="@{/list}" method="POST" th:object="${listForm}" >
       <span th:text="${item.itemid}"></span>
       <span th:text="${item.name}"></span>
       <span th:text="${item.price}"></span>
-    </dt>
+      <input type="hidden" name="itemid" th:value="${item.itemid}">
+      <input type="number" name="num" >
+      <input type="submit" name="order" value="カートに追加" >
+      </form>
   </th:block>
-</dl>
+
+
+
+カート情報
+  <th:block th:each="order: ${orderList}">
+      <span th:text="${order.itemid}"></span>
+      <span th:text="${order.num}"></span>
+  </th:block>
 
 </body>
 </html>
