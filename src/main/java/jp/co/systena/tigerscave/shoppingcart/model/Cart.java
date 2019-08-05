@@ -22,4 +22,15 @@ public class Cart {
   }
 
 
+  public int getTotalPrice() {
+    int totalPrice = 0;
+
+    for(Order order : this.orderList) {
+
+    }
+
+    return totalPrice;
+  }
+
+
 }

@@ -35,4 +35,16 @@ public class Item {
   public void setPrice(int price) {
     this.price = price;
   }
+
+
+  public Item() {
+
+  }
+
+  public Item(int itemid, String name, int price) {
+    this.itemid = itemid;
+    this.name = name;
+    this.price = price;
+  }
+
 }

@@ -12,11 +12,16 @@ public class ListService {
     List<Item> itemList = new ArrayList<Item>();
 
     Item item = new Item();
+
     item.setItemid(10);
     item.setName("じゃがりこ");
     item.setPrice(350);
-
     itemList.add(item);
+
+
+    item = new Item(20, "がりがりくん", 500);
+    itemList.add(item);
+
 
     return itemList;
   }
