@@ -60,9 +60,9 @@
 			</tr>
 			<th:block th:each="order: ${orderList}">
 				<tr>
+					<td th:text="${order.itemid}"></td>
 					<td th:text="${itemList.get(order.itemid).name}"></td>
 					<td th:text="${itemList.get(order.itemid).price}"></td>
-					<td th:text="${order.itemid}"></td>
 					<td th:text="${order.num}"></td>
 				</tr>
 			</th:block>
